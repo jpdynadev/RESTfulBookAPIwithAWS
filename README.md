@@ -31,3 +31,28 @@ To delete book, simply include the following in the body of the DELETE request u
 	"description" : '<description of book>'
 }
 ```
+
+Responses will look like the following: 
+
+``
+{
+    "success": "Success",                                         <--- "success" object designating result of response
+    "comment": "Sucessfully found all books",			  <--- "Comment" for the response, if failed will show Exception
+    "object": [							  <--- "Object" sent as response, in this example a list with all books
+        {
+            "name": "test3",
+            "serialID": "1",
+            "description": "test book 3"
+        },
+        {
+            "name": "test",
+            "serialID": "402881707179c68a017179c69f850000",
+            "description": "testing"
+        },
+        {
+            "name": "test5",
+            "serialID": "40288170717a7ead01717a82095d0000",
+            "description": "test book 5"
+        }
+    ]
+}
