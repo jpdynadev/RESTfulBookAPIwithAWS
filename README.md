@@ -34,7 +34,7 @@ To delete book, simply include the following in the body of the DELETE request u
 
 Responses will look like the following: 
 
-``
+```
 {
     "success": "Success",                                         <--- "success" object designating result of response
     "comment": "Sucessfully found all books",			  <--- "Comment" for the response, if failed will show Exception
@@ -56,3 +56,4 @@ Responses will look like the following:
         }
     ]
 }
+```
